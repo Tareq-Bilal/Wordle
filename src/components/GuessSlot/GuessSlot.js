@@ -5,7 +5,6 @@ import { checkGuess } from "../../game-helpers";
 import HappyBanner from "../HappyBanner/HappyBanner";
 import { NUM_OF_GUESSES_ALLOWED } from "../../constants";
 import SadBanner from "../SadBanner/SadBanner";
-import RestartButton from "../RestartButton/RestartButton";
 
 function GuessSlot({ guess, numberOfGuesses, answer }) {
   const guessLength = guess ? Math.min(Math.max(guess.length, 1), 5) : 0;
