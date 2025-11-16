@@ -40,6 +40,39 @@ button {
   color: inherit;
 }
 
+.restart.button {
+  padding: 12px;
+  background-color: transparent;
+  border: 2px solid var(--color-gray-700);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-inline: 8px;
+  color: white;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.restart.button:hover {
+  background-color: var(--color-gray-300);
+  color: white;
+  border-color: var(--color-gray-300);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.restart.button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.restart.button:focus-visible {
+  outline: 2px solid var(--color-gray-500);
+  outline-offset: 2px;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -174,6 +207,9 @@ h1 {
   animation: slideUp 750ms cubic-bezier(0, 0.72, 0.24, 1.02);
   border-radius: 4px 4px 0px 0px;
   will-change: transform;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .happy.banner {
